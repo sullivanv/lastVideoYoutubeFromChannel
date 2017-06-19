@@ -1,0 +1,37 @@
+<script>
+  var div = $('#DIVID');
+  var channelId = "YOUR CHANNEL ID";
+  div.append('<div id="videoYT" ><iframe  src="http://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=' + channelId + '" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>');
+</script>
+<style>
+#videoYT {
+  margin-top:60pt; 
+}
+#videoYT iframe {
+  height:800px;
+  width:80%;
+  margin-left: 10% !important;
+}
+@media (min-width: 1900px){
+  #videoYT iframe {
+    width:1520px;
+    margin-left:calc(50% - 760px) !important;
+  }
+}
+  
+@media (max-width: 1520px){
+  #videoYT iframe {
+    height:600px;
+  }
+}
+@media (max-width: 1100px){
+  #videoYT iframe {
+    height:450px;
+  }
+}
+@media (max-width: 700px){
+  #videoYT iframe {
+    height:300px;
+  }
+}
+</style>
